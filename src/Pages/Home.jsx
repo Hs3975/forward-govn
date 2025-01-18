@@ -13,9 +13,7 @@ import Logo from "../assets/favicon/forwardlogo.png";
 import AnotherBanner from "../Pages/Banner";
 import ExecutiveCommittee from "./ExecutiveCommitee/executiveCommitee";
 
-export const 
-
-Home = () => {
+export const Home = () => {
   const { scrollY } = useScroll();
   const [showSecondBanner, setShowSecondBanner] = useState(false);
   const bannerOpacity = useTransform(scrollY, [0, 100], [1, 0]);
@@ -27,73 +25,65 @@ Home = () => {
       setShowSecondBanner(scrollPosition > 100);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-const Banner = ({ bannerOpacity, bannerHeight }) => {
-  return (
-    <>
-      {/* Desktop/Larger Screens Banner */}
-      <motion.div
-        style={{
-          opacity: bannerOpacity,
-          height: bannerHeight,
-          overflow: "hidden",
-        }}
-        className="w-full bg-[#294B81] hidden sm:flex justify-start items-center gap-8 px-4 md:px-6 lg:px-12 py-2"
-      >
-        <div className="ml-4 md:ml-6">
-          <img 
-            src={Logo} 
-            className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28" 
-            alt="Logo" 
-          />
-        </div>
-        <div className="flex flex-col">
-          <div>
-            <h1 className="text-2xl sm:text-3xl md:text-[30px] font-semibold text-white leading-tight">
-              FORUM FOR RURAL WOMEN
-              <br /> ARDENCY DEVELOPMENT
+  const Banner = ({ bannerOpacity, bannerHeight }) => {
+    return (
+      <>
+        {/* Desktop/Larger Screens Banner */}
+        <motion.div
+          style={{
+            opacity: bannerOpacity,
+            height: bannerHeight,
+            overflow: "hidden",
+          }}
+          className="w-full bg-[#294B81] hidden sm:flex justify-start items-center gap-8 px-4 md:px-6 lg:px-12 py-2"
+        >
+          <div className="ml-4 md:ml-6">
+            <img
+              src={Logo}
+              className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28"
+              alt="Logo"
+            />
+          </div>
+          <div className="flex flex-col">
+            <div>
+              <h1 className="text-2xl sm:text-3xl md:text-[30px] font-semibold text-white leading-tight">
+                FORUM FOR RURAL WOMEN
+                <br /> ARDENCY DEVELOPMENT
+              </h1>
+            </div>
+            <div>
+              <p className="mt-2 text-white text-sm md:text-[15px]">
+                DUHABI, SUNSARI, NEPAL
+              </p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Mobile Banner */}
+        <motion.div
+          style={{
+            opacity: bannerOpacity,
+            overflow: "hidden",
+          }}
+          className="w-full bg-[#294B81] flex sm:hidden flex-col justify-center items-center px-4 py-4 text-center"
+        >
+          <div className="mb-4">
+            <img src={Logo} className="w-20 h-20 mx-auto" alt="Logo" />
+          </div>
+          <div className="flex flex-col items-center">
+            <h1 className="text-xl font-semibold text-white mb-2 text-center">
+              FORUM FOR RURAL WOMEN ARDENCY DEVELOPMENT
             </h1>
+            <p className="text-white text-sm">DUHABI, SUNSARI, NEPAL</p>
           </div>
-          <div>
-            <p className="mt-2 text-white text-sm md:text-[15px]">
-              DUHABI, SUNSARI, NEPAL
-            </p>
-          </div>
-        </div>
-      </motion.div>
-
-      {/* Mobile Banner */}
-      <motion.div
-        style={{
-          opacity: bannerOpacity,
-          overflow: "hidden",
-        }}
-        className="w-full bg-[#294B81] flex sm:hidden flex-col justify-center items-center px-4 py-4 text-center"
-      >
-        <div className="mb-4">
-          <img 
-            src={Logo} 
-            className="w-20 h-20 mx-auto" 
-            alt="Logo" 
-          />
-        </div>
-        <div className="flex flex-col items-center">
-          <h1 className="text-xl font-semibold text-white mb-2 text-center">
-            FORUM FOR RURAL WOMEN
-            ARDENCY DEVELOPMENT
-          </h1>
-          <p className="text-white text-sm">
-            DUHABI, SUNSARI, NEPAL
-          </p>
-        </div>
-      </motion.div>
-    </>
-  );
-};
-
+        </motion.div>
+      </>
+    );
+  };
 
   return (
     <>
@@ -102,13 +92,12 @@ const Banner = ({ bannerOpacity, bannerHeight }) => {
         {showSecondBanner && <AnotherBanner />}
         <motion.div
           style={{
-            top: showSecondBanner ? '58px' : 0,
+            top: showSecondBanner ? "58px" : 0,
             left: 0,
             right: 0,
             zIndex: 50,
           }}
-        >
-        </motion.div>
+        ></motion.div>
         <LandingPage />
         <ScrollingBanner />
         <Rural />

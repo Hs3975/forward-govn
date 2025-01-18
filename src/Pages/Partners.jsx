@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "../components/Footer";
 import AnotherBanner from "./Banner";
 
-import partner1 from "../assets/International Partners/partner1.png";
-import partner2 from "../assets/International Partners/partner2.png";
-import partner3 from "../assets/International Partners/partner3.jpg";
-import partner4 from "../assets/International Partners/partner4.jpg";
+import partner1 from "./../assets/International Partners/tzuchi.jpg";
+import partner2 from "../assets/International Partners/partner1.png";
+import partner3 from "../assets/International Partners/partner2.png";
+import partner4 from "../assets/International Partners/partner3.jpg";
+import partner5 from "../assets/International Partners/partner4.jpg";
 
 // Import Support partners
 import support1 from "../assets/Supports and Partners/1 (1).jpg";
@@ -29,6 +30,7 @@ function Partners() {
     { id: 2, image: partner2, alt: "International Partner 2" },
     { id: 3, image: partner3, alt: "International Partner 3" },
     { id: 4, image: partner4, alt: "International Partner 4" },
+    { id: 5, image: partner5, alt: "International Partner 4" },
   ];
 
   const supportPartners = [
@@ -49,7 +51,7 @@ function Partners() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <AnotherBanner/>
+      <AnotherBanner />
       <Navbar />
       <main className="flex-grow py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">

@@ -1,11 +1,10 @@
 import React from "react";
 import BlackNavbar from "../components/BlackNavbar";
 import Footer from "../components/Footer";
-import org from "../assets/Success Stories/org.jpg";
 import AnotherBanner from "./Banner";
-import img2 from "../assets/Success Stories/img2.jpg"
-import img3 from "../assets/Success Stories/img3.jpg"
-import img4 from "../assets/Success Stories/img4.jpg"
+import img2 from "../assets/Success Stories/img2.jpg";
+import img3 from "../assets/Success Stories/img3.jpg";
+import img4 from "../assets/Success Stories/img4.jpg";
 import img1 from "../assets/Success Stories/img1.jpg";
 
 function SuccessStories() {
@@ -23,11 +22,23 @@ function SuccessStories() {
                 </h2>
                 <div className=" flex w-full gap-4 h-64 overflow-x-auto scrollbar-hide">
                   <div className="lg:w-1/4 flex lg:flex-col lg:gap-4 lg:h-[15rem]">
-                    <img src={img1} className="rounded-md lg:h-1/2 w-full object-cover" />
-                    <img src={img2} className="rounded-md lg:h-1/2 w-full  object-cover" />
+                    <img
+                      src={img1}
+                      className="rounded-md lg:h-1/2 w-full object-cover"
+                    />
+                    <img
+                      src={img2}
+                      className="rounded-md lg:h-1/2 w-full  object-cover"
+                    />
                   </div>
-                  <img src={img3} className="rounded-md lg:w-2/4 object-cover" />
-                  <img src={img4} className="rounded-md lg:w-1/4 object-cover" />
+                  <img
+                    src={img3}
+                    className="rounded-md lg:w-2/4 object-cover"
+                  />
+                  <img
+                    src={img4}
+                    className="rounded-md lg:w-1/4 object-cover"
+                  />
                 </div>
               </div>
               <p className="text-gray-700 text-xl font-inter leading-relaxed mt-[4rem] px-6 md:px-[7rem] ">
@@ -76,17 +87,13 @@ function SuccessStories() {
                   development, entrepreneurship development, livestock
                   development etc).
                 </p>
-                <div className="p-10">
-                  <img
-                    src={org}
-                    alt="Org"
-                    className="w-1/2 max-sm:w-full mx-auto items-center h-full"
-                  />
-                </div>
-                <p className="text-gray-700 text-lg leading-relaxed font-inter mt-4 font-bold">
+
+                <hr className="my-[2rem]" />
+
+                <p className="text-gray-700 text-lg leading-relaxed font-inter my-4 font-bold">
                   Competency of the organization and Market linkages
                 </p>
-                <ul className="list-disc list-inside">
+                <ul className="list-disc list-inside text-lg">
                   <li>Micro-credit Operation</li>
                   <li>Low-Cost Earthquake-Resistant Rural Housing</li>
                   <li>Commercial Agriculture Development</li>
@@ -117,7 +124,7 @@ function SuccessStories() {
                   assistance with Habitat for Humanity International Nepal and
                   engaged in: -
                 </p>
-                <ul className="list-disc list-inside mt-12 mb-12">
+                <ul className="list-disc list-inside mt-12 mb-12 text-lg">
                   <li>
                     Construct house for poor and deprived community of 10,000
                     families and production centres in 2012-2016

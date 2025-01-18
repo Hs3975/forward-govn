@@ -6,39 +6,56 @@ const Goals = () => {
   const goals = [
     {
       id: "01",
-      title: "Replicating Successful Models",
-      description:
-        "Expanding our proven approaches to drive socio-economic development across new regions.",
+      title: "Income Generation Initiative",
+      description: "Promote self-sustaining income-generating activities.",
     },
     {
       id: "02",
-      title: "Strengthening Local Coordination",
+      title: "Financial Inclusion Access",
       description:
-        "Enhancing collaboration at district and regional levels to ensure efficient program implementation.",
+        "Offer credit facilities to disadvantaged groups with an accessible delivery process.",
     },
     {
       id: "03",
-      title: "Integrating Livelihood and Microfinance Programs",
+      title: "Community Development Awareness",
       description:
-        "Linking social development initiatives with microfinance to promote long-term economic improvement.",
+        "Raise awareness on conserving natural resources, agricultural development, health, education, and livelihoods.",
     },
     {
       id: "04",
-      title: "Building Partnerships and Capacity",
+      title: "Women's Economic Empowerment",
       description:
-        "Empowering local organizations, communities, and agencies through partnerships and capacity-building efforts.",
+        "Support women in socio-economic advancement via savings and credit programs.",
     },
     {
       id: "05",
-      title: "Focusing on Key Sectors",
+      title: "Partnership and Capacity Building",
       description:
-        "Prioritizing future programs in livelihood, biodiversity, commercial agriculture, and humanitarian support.",
+        "Conduct capacity-building and exposure programs in partnership with other agencies.",
     },
     {
       id: "06",
-      title: "Nationwide Program Expansion",
+      title: "Holistic Community Welfare",
       description:
-        "Aiming for comprehensive, national-level outreach to impact more lives and promote sustainable growth across Nepal.",
+        "To conduct welfare programs in the field of socio-economic, cultural, ecology as well as in humanitarian in various parts of Nepal.",
+    },
+    {
+      id: "07",
+      title: "Entrepreneurship Development",
+      description:
+        "To enhance the community skill for income generation and entrepreneurship activities.",
+    },
+    {
+      id: "08",
+      title: "Vulnerability Support Training",
+      description:
+        "To conduct need base various training programs to strengthen the condition of vulnerable.",
+    },
+    {
+      id: "09",
+      title: "Women's Rights Advocacy",
+      description:
+        "To aware women on humanitarian rights of poor and vulnerable minorities.",
     },
   ];
 
@@ -75,18 +92,18 @@ const Goals = () => {
           {goals.map((goal) => (
             <div
               key={goal.id}
-              className="bg-white py-6 rounded-lg transition-all duration-300 hover:scale-105"
+              className="bg-white py-6 rounded-lg transition-all duration-300 hover:scale-110"
             >
               <div className="flex justify-end mb-4">
                 <div className="bg-[#FFB65E] w-[3rem] h-[3rem] md:w-16 md:h-16 rounded-lg flex items-center justify-center text-5xl font-bold mb-2 md:mb-4">
                   {goal.id}
                 </div>
               </div>
-              <h4 className="text-[28px] md:text-[25px] lg:text-[27px] font-semibold font-archivo leading-[40px] text-left mb-4 lg:h-[120px]">
+              <h4 className="text-[28px] md:text-[25px] lg:text-[27px] font-semibold font-archivo leading-[30px] text-left lg:h-[120px]">
                 <span className="block mt-2">
                   {goal.title.split(" ")[0]} {goal.title.split(" ")[1]}
                 </span>
-                <span className="block mt-2">
+                <span className="block">
                   {goal.title.split(" ").slice(2).join(" ")}
                 </span>
               </h4>

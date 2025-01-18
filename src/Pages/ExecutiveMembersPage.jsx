@@ -6,7 +6,7 @@ import AnotherBanner from "./Banner";
 export const ExecutiveMembersPage = () => {
   return (
     <>
-      <AnotherBanner/>
+      <AnotherBanner />
       <BlackNavbar />
       <ExecutiveMembers />
       <Forward />

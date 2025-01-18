@@ -18,10 +18,9 @@ const Navbar = () => {
     Home: {},
     "About Us": {
       Column1: [
-        "Chairperson's Message",
-        "Goals and Objectives",
+        "Founder Chairperson's Message",
+        "Aims and Objectives",
         "Strategies",
-        "Legal Identities",
       ],
       Column2: [],
       Column3: [],
@@ -63,12 +62,10 @@ const Navbar = () => {
     } else if (item === "Success Stories") {
       setIsExecutiveActive(false);
       navigate("/success-stories");
-    }
-    else if (item === "Contact") {
+    } else if (item === "Contact") {
       setIsExecutiveActive(false);
       navigate("/contact");
-    }
-    else if (item === "Executive Committee") {
+    } else if (item === "Executive Committee") {
       setIsExecutiveActive(false);
       navigate("/executive-committee");
     } else {
@@ -106,7 +103,6 @@ const Navbar = () => {
   }, [location]);
 
   const handleMouseEnter = (item) => {
-    
     if (!isClickOpen) {
       if (submenuTimeoutRef.current) {
         clearTimeout(submenuTimeoutRef.current);
@@ -146,18 +142,25 @@ const Navbar = () => {
       navigate("/executive-committee");
     } else if (item === "Program") {
       setActiveSubmenu("Program");
-      console.log(activeSubmenu ,
+      console.log(
+        activeSubmenu,
         menuItems[activeSubmenu],
-        Object.keys(menuItems[activeSubmenu]).length > 0)
+        Object.keys(menuItems[activeSubmenu]).length > 0
+      );
     } else if (item === "About Us") {
       setActiveSubmenu("About Us");
-      console.log(activeSubmenu ,
+      console.log(
+        activeSubmenu,
         menuItems[activeSubmenu],
-        Object.keys(menuItems[activeSubmenu]).length > 0)
+        Object.keys(menuItems[activeSubmenu]).length > 0
+      );
     } else {
       setIsExecutiveActive(false);
     }
-    if (subItem === "Social Development" || subItem === "Institutional Development") {
+    if (
+      subItem === "Social Development" ||
+      subItem === "Institutional Development"
+    ) {
       return;
     }
     if (subItem) {
@@ -211,16 +214,15 @@ const Navbar = () => {
 
   const MainNavContent = () => (
     <div
-      className={`${activeSubmenu === "Program" || activeSubmenu === "About Us"
-        ? activeSubmenu
-          ? "bg-black"
+      className={`${
+        activeSubmenu === "Program" || activeSubmenu === "About Us"
+          ? activeSubmenu
+            ? "bg-black"
+            : ""
           : ""
-        : ""
-        }`}
+      }`}
     >
       <div className="flex items-center h-16 md:h-20 xl:h-24 2xl:h-28">
-
-
         <div className="hidden lg:flex items-center ">
           <div
             className="relative flex text-black items-center md:gap-2 lg:gap-4 xl:gap-10 2xl:gap-16"
@@ -237,14 +239,22 @@ const Navbar = () => {
                   href="#"
                   onClick={(e) => handleClick(item, null, e)}
                   className={`transition-colors [font-smoothing:none] [-webkit-font-smoothing:none] [-moz-osx-font-smoothing:grayscale] duration-300 text-sm lg:text-lg xl:text-lg 2xl:text-xl font-archivo 
-                    ${isExecutiveActive
-                      ? "text-black"
-                      : `${window.location.pathname === "/" || window.location.pathname === "/home"
-                        ? "text-white"
-                        : "text-black"
-                      } hover:text-zinc-600`
+                    ${
+                      isExecutiveActive
+                        ? "text-black"
+                        : `${
+                            window.location.pathname === "/" ||
+                            window.location.pathname === "/home"
+                              ? "text-white"
+                              : "text-black"
+                          } hover:text-zinc-600`
                     }
-                    ${activeSubmenu === "Program" || activeSubmenu === "About Us" ? "text-white" : ""}`}
+                    ${
+                      activeSubmenu === "Program" ||
+                      activeSubmenu === "About Us"
+                        ? "text-white"
+                        : ""
+                    }`}
                 >
                   {item}
                 </a>
@@ -261,7 +271,12 @@ const Navbar = () => {
           >
             <MenuIcon
               isOpen={isMenuOpen}
-              color={`${window.location.pathname === "/" || window.location.pathname === "/home" ? "white" : "black"}`}
+              color={`${
+                window.location.pathname === "/" ||
+                window.location.pathname === "/home"
+                  ? "white"
+                  : "black"
+              }`}
             />
           </button>
         </div>
@@ -276,7 +291,10 @@ const Navbar = () => {
 
     if (menuKey === "About Us") {
       return (
-        <div className="w-full p-8 pb-10 h-screen" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+        <div
+          className="w-full p-8 pb-10 h-screen"
+          style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
+        >
           <div className="max-w-5xl ml-[11rem]">
             <div className="col-span-1">
               {menuItems[menuKey]["Column1"].map((item) => (
@@ -300,7 +318,10 @@ const Navbar = () => {
     }
 
     return (
-      <div className="w-full pb-[20px] h-screen" style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}>
+      <div
+        className="w-full pb-[20px] h-screen"
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
+      >
         <div className="grid grid-cols-3 gap-4 max-w-6xl xl:ml-[5rem]">
           {Object.entries(menuItems[menuKey]).map(([column, items]) => (
             <div key={column} className={` col-span-1`}>
@@ -313,8 +334,14 @@ const Navbar = () => {
                 >
                   <div className={`${index === 0 ? "py-6" : "py-2"}`}>
                     <span
-                      className={`text-white font-inter tracking-widest ${index === 0 ? "text-2xl" : "text-xl"
-                        } font-light ${item === "Social Development" || item === "Institutional Development" ? "" : " hover:text-gray-400"} ${column == "Column1" ? "ml-[8rem]" : ""}`}
+                      className={`text-white font-inter tracking-widest ${
+                        index === 0 ? "text-2xl" : "text-xl"
+                      } font-light ${
+                        item === "Social Development" ||
+                        item === "Institutional Development"
+                          ? ""
+                          : " hover:text-gray-400"
+                      } ${column == "Column1" ? "ml-[8rem]" : ""}`}
                     >
                       {item}
                     </span>
@@ -331,12 +358,18 @@ const Navbar = () => {
   return (
     <div>
       <nav
-        className={`absolute w-full z-50 h-16 md:h-20 xl:h-24  ${window.location.pathname === "/" || window.location.pathname === "/home" ? "lg:mt-[0rem] " : "mt-[4rem] lg:mt-[4rem]"}   2xl:h-28 ${activeSubmenu === "Program" || activeSubmenu === "About Us"
-          ? activeSubmenu
-            ? "bg-black"
+        className={`absolute w-full z-50 h-16 md:h-20 xl:h-24  ${
+          window.location.pathname === "/" ||
+          window.location.pathname === "/home"
+            ? "lg:mt-[0rem] "
+            : "mt-[4rem] lg:mt-[4rem]"
+        }   2xl:h-28 ${
+          activeSubmenu === "Program" || activeSubmenu === "About Us"
+            ? activeSubmenu
+              ? "bg-black"
+              : ""
             : ""
-          : ""
-          }`}
+        }`}
       >
         <div className=" mx-auto flex items-center justify-end pr-4 lg:pr-0 lg:justify-center">
           <MainNavContent />
@@ -345,7 +378,7 @@ const Navbar = () => {
             Object.keys(menuItems[activeSubmenu]).length > 0 && (
               <div
                 className="absolute left-0 right-0 bg-black/80 transition-opacity duration-300 ease-in-out"
-                style={{ top: '100%' }}
+                style={{ top: "100%" }}
                 onMouseEnter={() => handleMouseEnter(activeSubmenu)}
                 onMouseLeave={handleMouseLeave}
               >

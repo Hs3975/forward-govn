@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import women from "../assets/Rural_Women/women.png";
 import { ArrowRight } from "lucide-react";
@@ -33,7 +31,7 @@ const RuralWomen = () => {
     },
   };
 
-  const naviagate = useNavigate()
+  const naviagate = useNavigate();
   return (
     <section className="w-full items-center mx-auto lg:mx-auto px-5 tracking-tight sm:px-6 md:px-10 xl:px-48 flex flex-col gap-y-16 mb-[100px] overflow-hidden relative">
       {/* Main content wrapper */}
@@ -49,8 +47,8 @@ const RuralWomen = () => {
               </div>
             </div>
 
-            <h1 className="text-black  mt-3 font-archivo text-xl tracking-normal sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold leading-tight  lg:leading-[50px]  xl:leading-snug xl:tracking-tight">
-              Where Rural Women Lead, Communities Thrive
+            <h1 className="text-black mt-12 font-archivo text-xl tracking-normal sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold leading-tight  lg:leading-[50px]  xl:leading-snug xl:tracking-tight">
+              <span className="font-light">Our</span> Values
             </h1>
           </div>
 
@@ -67,11 +65,18 @@ const RuralWomen = () => {
 
           {/* Content wrapper for descriptions */}
           <div className="md:space-y-10  mt-6 lg:space-y-12 xl:space-y-14">
-            <p className="text-[#383838] font-inter  text-sm sm:text-xl md:text-xl lg:text-[20px]  tracking-n leading-relaxed md:leading-[20px] lg:leading-relaxed xl:leading-[35px] lg:max-w-full">
-              Since 1995, FORWARD has been a beacon of hope for rural women and
-              communities in Nepal, spearheading socio-economic change through
-              innovative microfinance solutions, entrepreneurship initiatives,
-              and sustainable development practices.
+            <p className="text-[#383838] font-inter  text-sm sm:text-xl md:text-xl lg:text-[20px]  tracking-n leading-relaxed md:leading-[20px] lg:leading-relaxed xl:leading-[35px] lg:max-w-full italic">
+              "Empowering Communities, Building Futures"
+            </p>
+          </div>
+
+          <div className="xl:mt-[4rem]">
+            <h1 className="text-black  mt-3 font-archivo text-xl tracking-normal sm:text-4xl md:text-4xl lg:text-5xl xl:text-5xl font-semibold leading-tight  lg:leading-[50px]  xl:leading-snug xl:tracking-tight">
+              <span className="font-light">Our</span> Vision
+            </h1>
+            <p className="text-[#383838] font-inter  text-sm sm:text-xl md:text-xl lg:text-[20px]  tracking-n leading-relaxed md:leading-[20px] lg:leading-relaxed xl:leading-[35px] lg:max-w-full italic mt-6 2xl:mr-24">
+              "To build a self-sustained society for vulnerable communities,
+              aiming for scalability and sustainability"
             </p>
           </div>
         </div>
@@ -103,7 +108,7 @@ const RuralWomen = () => {
                 <motion.span
                   variants={bounceVariants}
                   className="text-4xl inline-block"
-                  onClick={(e) => (naviagate("/about-us/goals-and-objectives"))}
+                  onClick={(e) => naviagate("/about-us/goals-and-objectives")}
                 >
                   Learn More
                 </motion.span>
@@ -126,13 +131,13 @@ const RuralWomen = () => {
             <div className="h-[2px] bg-gray-300 w-full"></div>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6     items-center xl:space-x-10 xl:-mx-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 items-center xl:space-x-10 xl:-mx-12">
           {[img1, img2, img3, img4, img5, img6].map((img, index) => (
             <div key={index} className="h-24 sm:h-24 md:h-16 lg:h-16 xl:h-28 ">
               <img
                 src={img}
                 alt={`Supporter logo ${index + 1}`}
-                className="h-full  object-contain"
+                className="h-full object-contain"
               />
             </div>
           ))}

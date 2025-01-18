@@ -8,24 +8,22 @@ import AnotherBanner from "../../Banner";
 function Strategies() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const items = [
-    "Replication",
-    "Coordination",
-    "Livelihood",
-    "Partnership",
-    "Expansion",
+    "Participation",
+    "Action-Oriented",
+    "Resource Utilization",
+    "Innovative Development",
   ];
 
   const descriptions = [
-    "Forward’s approach involves creating replicas of successful initiatives, allowing us to adapt proven strategies to various communities across Nepal. This ensures that effective solutions can be scaled and implemented in different contexts, maximizing their impact.",
-    "Forward prioritizes coordination among diverse stakeholders to enhance program effectiveness. By fostering collaboration and ensuring all parties are aligned, we create a unified effort that amplifies our reach and ensures efficient resource use in achieving sustainable development.",
-    "Forward is dedicated to improving livelihoods by implementing programs that equip communities with essential skills and resources. Through sustainable practices and economic empowerment initiatives, we aim to enhance the quality of life and foster long-term stability for individuals and families.",
-    "Forward believes in the power of partnership to drive impactful change. By working closely with local organizations and communities, we leverage collective strengths and resources, enhancing the effectiveness of our programs and building lasting relationships for mutual benefit.",
-    "Forward’s vision includes strategic expansion into new regions to broaden our impact. By scaling successful initiatives and adapting them to meet local needs, we aim to reach more communities, ensuring our efforts contribute to sustainable development across Nepal.",
+    "Involve women actively to improve the economic conditions of impoverished families.",
+    "Implement policies tailored to specific operational needs, focusing on community development.",
+    "Efficiently use local resources for sustainable, community-focused development.",
+    "Encourage participatory development through a shared vision and innovative ideas.",
   ];
 
   return (
     <div className="flex flex-col">
-      <AnotherBanner/>
+      <AnotherBanner />
       <Navbar />
       <main className="h-full w-screen flex-grow mt-[8rem] md:mt-[10rem] bg-white ">
         <section>
@@ -58,7 +56,7 @@ function Strategies() {
           </div>
 
           <div className="pl-10 md:flex pr-10 gap-[5rem] md:justify-between md:p-20 md:pt-[7rem]">
-            <div className="md:w-[50%]">
+            <div className="md:w-[40%]">
               <h1 className="font-archivo text-[20px] mb-10 leading-[120%] font-bold md:text-[35px]">
                 Our strategic approach combines effective program replication
                 and regional coordination.
@@ -70,7 +68,7 @@ function Strategies() {
                 communities across the country.
               </p>
             </div>
-            <div className="md:w-[50%]">
+            <div className="md:w-[60%]">
               <div className="md:whitespace-normal mt-10 md:mt-0 flex md:flex-wrap scrollbar-hide whitespace-nowrap gap-5 overflow-x-auto">
                 {/* Render a button for each item in the items array   */}
                 {items.map((items, index) => (
@@ -109,8 +107,6 @@ function Strategies() {
                 align strategies
               </h1>
             </div>
-            
-          
 
             <div className="md:w-[50%]">
               <p className="text-[16px]  font-inter md:text-[20px] text-[#525560] leading-[32px]">

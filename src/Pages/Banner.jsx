@@ -16,10 +16,10 @@ const AnotherBanner = () => {
       <div className="flex flex-col sm:flex-row items-center justify-between h-full">
         <div className="flex items-center space-x-2 sm:space-x-4 w-full">
           <div className="flex-shrink-0">
-            <img 
-              src={Logo} 
-              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain" 
-              alt="Logo" 
+            <img
+              src={Logo}
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 object-contain"
+              alt="Logo"
             />
           </div>
           <div className="flex flex-col flex-grow">

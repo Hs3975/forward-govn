@@ -1,11 +1,11 @@
-
-import React from 'react';
-import BlackNavbar from './BlackNavbar';
-import { useLocation } from 'react-router-dom';
-import img1 from '../assets/Executive/img1.png';
-import img2 from '../assets/Executive/img2.png';
-import img3 from '../assets/Executive/img3.png';
-import img4 from '../assets/Executive/img4.png';
+import React from "react";
+import BlackNavbar from "./BlackNavbar";
+import { useLocation } from "react-router-dom";
+import img1 from "../assets/Executive/img1.png";
+import img2 from "../assets/Executive/img2.png";
+import img3 from "../assets/Executive/img3.png";
+import img4 from "../assets/Executive/img4.png";
+import arganogram from "../assets/Executive/arganogram.jpg";
 
 const ExecutiveMembers = () => {
   const executives = [
@@ -15,52 +15,69 @@ const ExecutiveMembers = () => {
       imageUrl: img1,
     },
     {
-      name: "Hira Devi",
-      role: "Vice Chairperson",
+      name: "Drabya Raj Chaudhary",
+      role: "Executive Director",
       imageUrl: img2,
     },
     {
-      name: "Sarita Shah",
-      role: "Treasurer",
+      name: "Govinda Chaudhary",
+      role: "Program Cordinator",
+      imageUrl: img3,
+    },
+    {
+      name: "Karan Chaudhary",
+      role: "Accountant",
+      imageUrl: img4,
+    },
+    {
+      name: "Alok Mishra",
+      role: "Engineer",
+      imageUrl: img3,
+    },
+    {
+      name: "Ajay Chaudhary",
+      role: "Engineer",
+      imageUrl: img3,
+    },
+    {
+      name: "Jay Narayan Biswas",
+      role: "Field Officer",
+      imageUrl: img3,
+    },
+    {
+      name: "Abhishek Chaudhary",
+      role: "Field Officer",
       imageUrl: img3,
     },
     {
       name: "Lalita Chaudhary",
-      role: "Secretary",
-      imageUrl: img4,
-    },
-    {
-      name: "Sarita Shah",
-      role: "Treasurer",
+      role: "Field Officer",
       imageUrl: img3,
     },
     {
-      name: "Sarita Shah",
-      role: "Treasurer",
+      name: "Binita Ghale",
+      role: "Field Officer",
       imageUrl: img3,
     },
     {
-      name: "Sarita Shah",
-      role: "Treasurer",
+      name: "Anita Uraw",
+      role: "Office helper",
       imageUrl: img3,
     },
-    {
-      name: "Sarita Shah",
-      role: "Treasurer",
-      imageUrl: img3,
-    }
   ];
-  
-  const extraExecutives = [{
-    name: "Sarita Shah",
-    role: "Treasurer",
-    imageUrl: img3,
-  },
-  {
-    name: "Sarita Shah",
-    role: "Treasurer",
-    imageUrl: img3,
-  }]
+
+  const extraExecutives = [
+    {
+      name: "Sarita Shah",
+      role: "Treasurer",
+      imageUrl: img3,
+    },
+    {
+      name: "Sarita Shah",
+      role: "Treasurer",
+      imageUrl: img3,
+    },
+  ];
 
   return (
     <div className="w-full min-h-screen bg-white">
@@ -70,20 +87,31 @@ const ExecutiveMembers = () => {
           <div className=" sm:grid   md:grid-cols-2 gap-8 ">
             <div>
               <h1 className="text-3xl md:mx-20  mb-4 font-archivo font-[800]">
-                Building Strong Foundations<br />
+                Building Strong Foundations
+                <br />
                 for Community Impact
               </h1>
             </div>
             <div>
               <p className="text-gray-700 font-inter text-base md:text-lg">
-                Our Board and Executive Committee are dedicated to guiding Forward's
-                mission with a strategic and hands-on approach. Focused on strong
-                oversight and efficiency, the Board supervises operational heads,
-                manages internal audits, and works closely with the management team
-                to ensure effective program implementation.
+                Our Board and Executive Committee are dedicated to guiding
+                Forward's mission with a strategic and hands-on approach.
+                Focused on strong oversight and efficiency, the Board supervises
+                operational heads, manages internal audits, and works closely
+                with the management team to ensure effective program
+                implementation.
               </p>
             </div>
           </div>
+        </div>
+
+        {/** Arganogram */}
+        <div className="p-10">
+          <img
+            src={arganogram}
+            alt="Org"
+            className="w-2/3 max-sm:w-full mx-auto items-center h-full"
+          />
         </div>
 
         <div className="py-16">
@@ -92,8 +120,10 @@ const ExecutiveMembers = () => {
               Our Executive Members
             </h2>
             <p className="text-center text-gray-600 font-inter mb-12">
-              The Board, along with the management team, oversees the regular supervision, monitoring,
-              <br></br> and follow-up of all Group, Center units, and Branch offices.
+              The Board, along with the management team, oversees the regular
+              supervision, monitoring,
+              <br></br> and follow-up of all Group, Center units, and Branch
+              offices.
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -106,12 +136,14 @@ const ExecutiveMembers = () => {
                       className="w-full aspect-square object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                     />
                   </div>
-                  <h3 className="text-xl font-semibold font-archivo">{member.name}</h3>
+                  <h3 className="text-xl font-semibold font-archivo">
+                    {member.name}
+                  </h3>
                   <p className="text-gray-600 font-inter">{member.role}</p>
                 </div>
               ))}
             </div>
-            <div className='flex justify-center items-center sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8'>
+            {/* <div className="flex justify-center items-center sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
               {extraExecutives.map((member, index) => (
                 <div key={index} className="flex flex-col items-center">
                   <div className="mb-4 w-full">
@@ -121,11 +153,13 @@ const ExecutiveMembers = () => {
                       className="w-full aspect-square object-cover rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                     />
                   </div>
-                  <h3 className="text-xl font-semibold font-archivo">{member.name}</h3>
+                  <h3 className="text-xl font-semibold font-archivo">
+                    {member.name}
+                  </h3>
                   <p className="text-gray-600 font-inter">{member.role}</p>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

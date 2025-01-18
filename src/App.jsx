@@ -32,8 +32,8 @@ const App = () => {
           element={<PovertyAlleviation />}
         />
         <Route path="/program/environment" element={<Environment />} />
-        <Route path="/executive-committee" element={<ExecutiveCommittee/>}/>
-        
+        <Route path="/executive-committee" element={<ExecutiveCommittee />} />
+
         <Route
           path="/program/skill-development"
           element={<SkillDevelopment />}
@@ -45,7 +45,7 @@ const App = () => {
           path="/about-us/chairpersons-message"
           element={<ChairPersonMessage />}
         />
-        <Route path="/about-us/goals-and-objectives" element={<GoalsPage />} />
+        <Route path="/about-us/aims-and-objectives" element={<GoalsPage />} />
         <Route path="/about-us/strategies" element={<Strategy />} />
         <Route
           path="/about-us/legal-identities"

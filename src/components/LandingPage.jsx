@@ -48,8 +48,8 @@ const LandingPage = () => {
 
   const headlines = [
     "Rural Women\nDevelopment",
-    "Drinking Water\nDevelopment",
-    "Vocational Training\nProgram",
+    "Wash\nSpecialist Access",
+    "Farm, Fishery,\nHouse Building",
   ];
 
   useEffect(() => {
