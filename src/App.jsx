@@ -42,7 +42,7 @@ const App = () => {
         <Route path="/success-stories" element={<SuccessStories />} />
 
         <Route
-          path="/about-us/chairpersons-message"
+          path="/about-us/founder-chairpersons-message"
           element={<ChairPersonMessage />}
         />
         <Route path="/about-us/aims-and-objectives" element={<GoalsPage />} />

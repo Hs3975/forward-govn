@@ -19,7 +19,6 @@ function ChairPersonMessage() {
                   Founder Chairperson
                 </h2>
                 <div className=" flex w-full ">
-
                   <div className=" flex flex-col  md:flex-row md:items-end gap-4">
                     <div className="flex  items-center w-full md:w-1/3 ">
                       <img
@@ -31,30 +30,38 @@ function ChairPersonMessage() {
                     <div className="w-full md:w-[60%] ">
                       <div className="flex gap-4 items-center mt-6 md:mt-0">
                         <div className="w-6 h-6 rounded-full bg-[#FFB700] blur-[2px]"></div>
-                        <h1 className=" font-archivo text-xl md:text-3xl font-semibold ">Bagwati Chaudary</h1>
+                        <h1 className=" font-archivo text-xl md:text-3xl font-semibold ">
+                          Bhagbati Chaudary
+                        </h1>
                       </div>
-                      <p className="text-black text-lg leading-relaxed mt-6">Bhagbati Chaudhary is the founder of the organization, she and her team established this organization in Paush 2051 (Dec 1994). Licensed by Nepal Rastra Bank as a Financial Intermediary in December 2002, allowing for microfinance operations.</p>
+                      <p className="text-black text-lg leading-relaxed mt-6">
+                        Bhagbati Chaudhary is the founder of the organization,
+                        she and her team established this organization in Paush
+                        2051 (Dec 1994). Licensed by Nepal Rastra Bank as a
+                        Financial Intermediary in December 2002, allowing for
+                        microfinance operations.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
               <p className="text-gray-700 text-xl font-inter leading-relaxed mt-[4rem] px-6 lg:px-[7rem] ">
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  Forum for Rural Women Ardency Development (FORWARD) established
-                  in May 1995 and managed by compatible and committed women
-                  professional groups, works for backward vulnerable, indigenous
-                  people and communities on right based programs for empowering
-                  them in sustainable manner.
+                  Forum for Rural Women Ardency Development (FORWARD)
+                  established in May 1995 and managed by compatible and
+                  committed women professional groups, works for backward
+                  vulnerable, indigenous people and communities on right based
+                  programs for empowering them in sustainable manner.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mt-4">
                   FORWARD developed trust among their supporters through
-                  participation and partnership approach of cooperation of ideas,
-                  collective views in order to significant role in poverty
-                  alleviation and obligation to help against poverty through
-                  microfinance, social development and institutional development
-                  program. FORWARD raised their voices against the domestic
-                  violence of women, child and vulnerable community through mass
-                  awareness and advocacy programme.
+                  participation and partnership approach of cooperation of
+                  ideas, collective views in order to significant role in
+                  poverty alleviation and obligation to help against poverty
+                  through microfinance, social development and institutional
+                  development program. FORWARD raised their voices against the
+                  domestic violence of women, child and vulnerable community
+                  through mass awareness and advocacy programme.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mt-4">
                   I would like to thank all of my members, advisors, executive
@@ -62,24 +69,24 @@ function ChairPersonMessage() {
                   regulatory NRB, RMDC, related District Development Committee
                   (DDC), District Administration Office (DAO), other concern
                   district stakeholders, different commercial banks, Standard
-                  Chartered Bank, Everest Bank, Himalayan Bank, Bank of Kathmandu,
-                  Sanima Bank, NABIL Bank, Clean Energy Bank, Citizens
-                  International Bank, Siddhartha Bank, First Microfinance
-                  Development Bank etc. alongwith other donors ADB, Habitat for
-                  Humanity International, Australian AID, Unicef, KOICA, UNDP,
-                  UNCDF etc. and rest of other well-wishers NGOs and Microfinance
-                  Networks/ Partners those are working for poverty reduction and
-                  poverty throughout from the country.
+                  Chartered Bank, Everest Bank, Himalayan Bank, Bank of
+                  Kathmandu, Sanima Bank, NABIL Bank, Clean Energy Bank,
+                  Citizens International Bank, Siddhartha Bank, First
+                  Microfinance Development Bank etc. alongwith other donors ADB,
+                  Habitat for Humanity International, Australian AID, Unicef,
+                  KOICA, UNDP, UNCDF etc. and rest of other well-wishers NGOs
+                  and Microfinance Networks/ Partners those are working for
+                  poverty reduction and poverty throughout from the country.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                  Similarly, my heartily appreciation to our board members, senior
-                  management team (SMT) and all other associated staffs of head
-                  office, Area offices and branch offices of FORWARD. Moreover, I
-                  appreciated the enthusiasm, hard-working, commitment with
-                  accountable and transparent performance of all staffs, give
-                  enormous assistance to me and organisation for better flourish
-                  and scaling-up of Organisation as well as for better fund
-                  raising from donors and stakeholders.
+                  Similarly, my heartily appreciation to our board members,
+                  senior management team (SMT) and all other associated staffs
+                  of head office, Area offices and branch offices of FORWARD.
+                  Moreover, I appreciated the enthusiasm, hard-working,
+                  commitment with accountable and transparent performance of all
+                  staffs, give enormous assistance to me and organisation for
+                  better flourish and scaling-up of Organisation as well as for
+                  better fund raising from donors and stakeholders.
                 </p>
                 <p className="text-gray-700 text-lg leading-relaxed mt-4">
                   I am grateful to all supporters, contributed through their
@@ -87,8 +94,8 @@ function ChairPersonMessage() {
                   ourganisation. Finally, I commit to improve better qualitative
                   service to our clients, partner and well-wishers of
                   organisation. It's my pleasure to accept all valuable
-                  suggestions and comments from our related stakeholders, members
-                  and funding agencies.
+                  suggestions and comments from our related stakeholders,
+                  members and funding agencies.
                 </p>
                 <p className="text-gray-700 font-bold text-lg mt-4 font-inter">
                   Bhagbati Chaudhary

@@ -108,7 +108,7 @@ const RuralWomen = () => {
                 <motion.span
                   variants={bounceVariants}
                   className="text-4xl inline-block"
-                  onClick={(e) => naviagate("/about-us/goals-and-objectives")}
+                  onClick={(e) => naviagate("/about-us/aims-and-objectives")}
                 >
                   Learn More
                 </motion.span>
