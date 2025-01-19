@@ -29,7 +29,7 @@ const Navbar = () => {
       Column1: ["Microfinance"],
       Column2: [
         "Social Development",
-        "Low cost housing and rehabilitation (LCHR)",
+        "Low cost housing and rehabilitation",
         "Poverty alleviation",
         "Hunger relief fund",
         "Women health and empowerment program",
@@ -239,7 +239,7 @@ const Navbar = () => {
                 <a
                   href="#"
                   onClick={(e) => handleClick(item, null, e)}
-                  className={`transition-colors [font-smoothing:none] [-webkit-font-smoothing:none] [-moz-osx-font-smoothing:grayscale] duration-300 text-sm lg:text-lg xl:text-lg 2xl:text-xl font-archivo 
+                  className={`transition-colors duration-300 text-sm lg:text-lg xl:text-lg 2xl:text-xl font-archivo 
                     ${
                       isExecutiveActive
                         ? "text-black"
@@ -293,7 +293,7 @@ const Navbar = () => {
     if (menuKey === "About Us") {
       return (
         <div
-          className="w-full p-8 pb-10 h-screen"
+          className="w-full p-8 pb-10 h-[40vh]"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}
         >
           <div className="max-w-5xl ml-[11rem]">
@@ -306,7 +306,7 @@ const Navbar = () => {
                   className="block"
                 >
                   <div className="py-2">
-                    <span className="text-white hover:text-gray-500 font-inter tracking-widest text-xl">
+                    <span className="text-white hover:text-gray-500 font-inter tracking-normal text-lg">
                       {item}
                     </span>
                   </div>
@@ -320,7 +320,7 @@ const Navbar = () => {
 
     return (
       <div
-        className="w-full pb-[20px] h-screen"
+        className="w-full pb-[20px] h-[40vh]"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.8)" }}
       >
         <div className="grid grid-cols-3 gap-4 max-w-6xl xl:ml-[5rem]">
@@ -335,8 +335,8 @@ const Navbar = () => {
                 >
                   <div className={`${index === 0 ? "py-6" : "py-2"}`}>
                     <span
-                      className={`text-white font-inter tracking-widest ${
-                        index === 0 ? "text-2xl" : "text-xl"
+                      className={`text-white font-inter ${
+                        index === 0 ? "text-2xl" : "text-lg tracking-normal"
                       } font-light ${
                         item === "Social Development" ||
                         item === "Institutional Development"

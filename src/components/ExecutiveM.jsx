@@ -1,81 +1,57 @@
 import React from "react";
 import BlackNavbar from "./BlackNavbar";
-import { useLocation } from "react-router-dom";
-import img1 from "../assets/Executive/img1.png";
-import img2 from "../assets/Executive/img2.png";
-import img3 from "../assets/Executive/img3.png";
-import img4 from "../assets/Executive/img4.png";
 import arganogram from "../assets/Executive/arganogram.png";
+
+import raj from "../assets/Executive/raj.jpg";
+import kala from "../assets/Executive/kala.jpg";
+import hira from "../assets/Executive/hira.jpg";
+import shree from "../assets/Executive/shree.jpg";
+import rita from "../assets/Executive/rita.jpg";
+import babita from "../assets/Executive/babita.jpg";
+import sharmila from "../assets/Executive/sharmila.jpg";
+import anil from "../assets/Executive/anil.jpg";
 
 const ExecutiveMembers = () => {
   const executives = [
     {
-      name: "Bhagwati Chaudhary",
+      name: "Raj Kumari Chaudhary",
       role: "Chairperson",
-      imageUrl: img1,
+      imageUrl: raj,
     },
     {
-      name: "Drabya Raj Chaudhary",
-      role: "Executive Director",
-      imageUrl: img2,
+      name: "Kalawati Tharuni",
+      role: "Vice Chairperson",
+      imageUrl: kala,
     },
     {
-      name: "Govinda Chaudhary",
-      role: "Program Cordinator",
-      imageUrl: img3,
+      name: "Hira Kumari Thandar",
+      role: "Chief Secretary",
+      imageUrl: hira,
     },
     {
-      name: "Karan Chaudhary",
-      role: "Accountant",
-      imageUrl: img4,
-    },
-    {
-      name: "Alok Mishra",
-      role: "Engineer",
-      imageUrl: img3,
-    },
-    {
-      name: "Ajay Chaudhary",
-      role: "Engineer",
-      imageUrl: img3,
-    },
-    {
-      name: "Jay Narayan Biswas",
-      role: "Field Officer",
-      imageUrl: img3,
-    },
-    {
-      name: "Abhishek Chaudhary",
-      role: "Field Officer",
-      imageUrl: img3,
-    },
-    {
-      name: "Lalita Chaudhary",
-      role: "Field Officer",
-      imageUrl: img3,
-    },
-    {
-      name: "Binita Ghale",
-      role: "Field Officer",
-      imageUrl: img3,
-    },
-    {
-      name: "Anita Uraw",
-      role: "Office helper",
-      imageUrl: img3,
-    },
-  ];
-
-  const extraExecutives = [
-    {
-      name: "Sarita Shah",
+      name: "Shreekumari Chaudhary",
       role: "Treasurer",
-      imageUrl: img3,
+      imageUrl: shree,
     },
     {
-      name: "Sarita Shah",
-      role: "Treasurer",
-      imageUrl: img3,
+      name: "Rita Kumari Chaudhary",
+      role: "Secretary",
+      imageUrl: rita,
+    },
+    {
+      name: "Babita Kumari Lekhi",
+      role: "Member",
+      imageUrl: babita,
+    },
+    {
+      name: "Sharmila Kumari Chaudhary",
+      role: "Member",
+      imageUrl: sharmila,
+    },
+    {
+      name: "Anil Uranw",
+      role: "Member",
+      imageUrl: anil,
     },
   ];
 
