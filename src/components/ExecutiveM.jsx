@@ -5,7 +5,7 @@ import img1 from "../assets/Executive/img1.png";
 import img2 from "../assets/Executive/img2.png";
 import img3 from "../assets/Executive/img3.png";
 import img4 from "../assets/Executive/img4.png";
-import arganogram from "../assets/Executive/arganogram.jpg";
+import arganogram from "../assets/Executive/arganogram.png";
 
 const ExecutiveMembers = () => {
   const executives = [
@@ -110,7 +110,7 @@ const ExecutiveMembers = () => {
           <img
             src={arganogram}
             alt="Org"
-            className="w-2/3 max-sm:w-full mx-auto items-center h-full"
+            className="max-2xl:w-full mx-auto items-center h-full"
           />
         </div>
 

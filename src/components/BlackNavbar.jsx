@@ -29,20 +29,21 @@ const Navbar = () => {
       Column1: ["Microfinance"],
       Column2: [
         "Social Development",
-        "Housing and Wash",
-        "Poverty Alleviation",
-        "Skill Development",
+        "Low cost housing and rehabilitation (LCHR)",
+        "Poverty alleviation",
+        "Hunger relief fund",
+        "Women health and empowerment program",
         "Alternative Energy",
         "Environment",
       ],
-      Column3: ["Institutional Development", "AGM", "Voluntary Program"],
+      Column3: ["Institutional Development", "Voluntary Program"],
     },
     "Executive members": null,
     Partners: {},
     "Success Stories": {},
     Gallery: {},
     Contact: {},
-    "Executive Committee": null,
+    Notice: null,
   };
 
   const hasSubmenu = (item) => {
@@ -65,9 +66,9 @@ const Navbar = () => {
     } else if (item === "Contact") {
       setIsExecutiveActive(false);
       navigate("/contact");
-    } else if (item === "Executive Committee") {
+    } else if (item === "Notice") {
       setIsExecutiveActive(false);
-      navigate("/executive-committee");
+      navigate("/notice");
     } else {
       setIsExecutiveActive(false);
     }
@@ -139,7 +140,7 @@ const Navbar = () => {
       navigate("/contact");
     } else if (item === "Executive Committee") {
       setIsExecutiveActive(false);
-      navigate("/executive-committee");
+      navigate("/notice");
     } else if (item === "Program") {
       setActiveSubmenu("Program");
       console.log(

@@ -32,7 +32,7 @@ const App = () => {
           element={<PovertyAlleviation />}
         />
         <Route path="/program/environment" element={<Environment />} />
-        <Route path="/executive-committee" element={<ExecutiveCommittee />} />
+        <Route path="/notice" element={<ExecutiveCommittee />} />
 
         <Route
           path="/program/skill-development"
