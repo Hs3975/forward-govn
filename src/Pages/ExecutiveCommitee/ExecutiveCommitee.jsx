@@ -32,7 +32,7 @@ const ExecutiveCommittee = () => {
     {
       name: "Rajkumari Tabdar",
       qualification: "I.A.",
-      post: "Treasurer",
+      post: "Member",
       location: "Biratnagar, Morang",
     },
     {
